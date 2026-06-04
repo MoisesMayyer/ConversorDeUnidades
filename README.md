@@ -1,69 +1,109 @@
-# Conversor de Unidades
+ 🔄 Conversor de Unidades
 
-Projeto desenvolvido em Python utilizando a biblioteca CustomTkinter.
+Projeto desenvolvido em Python utilizando a biblioteca **CustomTkinter**.
 
-## Sobre o Projeto
+---
 
-Este projeto foi inspirado em um desafio de criação de um conversor de unidades. A proposta original era desenvolver uma aplicação web, porém o projeto está sendo desenvolvido como uma aplicação desktop para praticar Python, interfaces gráficas e organização de código.
+## 📌 Sobre o Projeto
 
-O objetivo é permitir que o usuário informe um valor, selecione uma unidade de origem e uma unidade de destino, realizando a conversão de forma simples e intuitiva.
+Este projeto foi inspirado em um desafio de criação de um conversor de unidades. A proposta original era desenvolver uma aplicação web, porém ele foi implementado como uma aplicação desktop com o objetivo de praticar:
 
-## Funcionalidades Atuais
+- Python
+- Interfaces gráficas
+- Organização de código
 
-* Interface gráfica construída com CustomTkinter.
-* Seleção de categorias de conversão.
-* Atualização automática das unidades disponíveis de acordo com a categoria escolhida.
-* Campo para inserção do valor a ser convertido.
-* Seleção da unidade de origem.
-* Seleção da unidade de destino.
-* Estrutura modularizada para facilitar a manutenção e futuras melhorias.
+O sistema permite que o usuário informe um valor, selecione uma unidade de origem e uma unidade de destino, e visualize o resultado da conversão de forma simples e intuitiva.
 
-## Categorias Disponíveis
+---
+
+## 🚧 Status do Projeto
+
+**Em desenvolvimento**
+
+---
+
+## 🧭 Versão Atual
+
+**v0.2**
+
+---
+
+## ✅ Implementado nesta versão
+
+- Interface gráfica construída com CustomTkinter  
+- Seleção de categorias de conversão  
+- Atualização automática das unidades disponíveis  
+- Campo para inserção de valores  
+- Seleção da unidade de origem e destino  
+- Conversão funcional de comprimento  
+- Exibição do resultado na interface  
+- Tratamento básico de entradas inválidas  
+- Estrutura modular do projeto  
+
+---
+
+## 🔮 Próximas Implementações
+
+- Conversão de massa  
+- Conversão de temperatura  
+- Ampliação de unidades disponíveis  
+- Melhorias visuais e de usabilidade  
+- Tratamento mais robusto de erros  
+
+---
+
+## 📏 Categorias Disponíveis
 
 ### Comprimento
-
-* Centímetro
-* Metro
-* Quilômetro
+- Centímetro  
+- Metro  
+- Quilômetro  
 
 ### Massa
-
-* Grama
-* Quilograma
-* Tonelada
+- Grama  
+- Quilograma  
+- Tonelada  
 
 ### Temperatura
+- Celsius  
+- Fahrenheit  
+- Kelvin  
 
-* Celsius
-* Fahrenheit
-* Kelvin
+---
 
-## Em Desenvolvimento
+## 🛠 Tecnologias Utilizadas
 
-* Implementação das conversões de unidades.
-* Exibição dos resultados na interface.
-* Tratamento de entradas inválidas.
-* Ampliação da quantidade de unidades disponíveis.
-* Melhorias visuais e de usabilidade.
+- Python 3  
+- CustomTkinter  
 
-## Objetivos de Aprendizado
+---
 
-Durante o desenvolvimento deste projeto estão sendo praticados conceitos como:
+## 🎯 Objetivos de Aprendizado
 
-* Python
-* Programação orientada a objetos
-* Modularização de código
-* Interfaces gráficas com CustomTkinter
-* Organização de projetos
-* Git e GitHub
+Durante o desenvolvimento deste projeto foram praticados os seguintes conceitos:
 
-## Tecnologias Utilizadas
+- Programação Orientada a Objetos (POO)  
+- Modularização de código  
+- Interfaces gráficas com CustomTkinter  
+- Organização de projetos  
+- Git e GitHub  
+- Estruturas de dados  
+- Tratamento de erros  
 
-* Python 3
-* CustomTkinter
+---
 
-## Status do Projeto
+## 📚 Histórico de Versões
 
-🚧 Em desenvolvimento
+### v0.2
+- Implementação da conversão de comprimento  
+- Integração entre interface e lógica de negócio  
+- Exibição de resultados na interface  
+- Tratamento básico de entradas inválidas  
 
-Atualmente a interface gráfica está funcional e a estrutura do projeto já está organizada. As funcionalidades de conversão serão implementadas nas próximas etapas do desenvolvimento.
+### v0.1
+- Criação da interface gráfica inicial  
+- Seleção de categorias  
+- Atualização dinâmica das unidades  
+- Estrutura inicial do projeto  
+
+---

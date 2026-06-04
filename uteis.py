@@ -1,6 +1,6 @@
 
 def lista_de_unidades():
-    unidades_lista = {
+    return {
         "Comprimento": [
             "Centímetro",
             "Metro",
@@ -19,4 +19,13 @@ def lista_de_unidades():
             "Kelvin"
         ]
     }
-    return unidades_lista
+
+
+
+def fatores_comprimento():
+    fatores = {
+        "Centímetro": 0.01,
+        "Metro": 1,
+        "Quilômetro": 1000
+    }
+    return fatores

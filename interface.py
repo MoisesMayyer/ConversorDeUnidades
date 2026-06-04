@@ -1,5 +1,6 @@
 import customtkinter as ctk
 from uteis import lista_de_unidades
+from conversor import converter
 
 
 def criar_janela():
@@ -13,6 +14,20 @@ def criar_janela():
 
         unidade_destino.configure(values=lista)
         unidade_destino.set(lista[0])
+
+
+    def conversao():
+        valor = inserir_valor.get()
+        categoria = categorias.get()
+        unidadei = unidade_inicial.get()
+        unidadef = unidade_destino.get()
+
+        resultado = converter(valor, categoria, unidadei,unidadef)
+        erro = isinstance(resultado, str)
+        if erro:
+            conversao_resultado.configure(text=f"converter: {resultado:}")
+        else:
+            conversao_resultado.configure(text=f"converter: {resultado:.3f}")
 
 
     ctk.set_appearance_mode("dark")
@@ -53,7 +68,7 @@ def criar_janela():
 
     unidades_lista = lista_de_unidades()
 
-    categoria = ctk.CTkComboBox(
+    categorias = ctk.CTkComboBox(
         janela,
         values= list(unidades_lista.keys()),
         font=("arial", 15),
@@ -61,7 +76,7 @@ def criar_janela():
 
     )
 
-    categoria.grid(
+    categorias.grid(
         row=2,
         column=0,
         padx=20,
@@ -152,13 +167,14 @@ def criar_janela():
         sticky="w"
     )
 
-    categoria.set("Comprimento")
+    categorias.set("Comprimento")
     atualizar_unidades("Comprimento")
 
     #botao de conversao
     botao_converter = ctk.CTkButton(
         janela,
         text="Converter",
+        command=conversao
     )
 
     botao_converter.grid(
@@ -168,5 +184,20 @@ def criar_janela():
         pady=(10, 15),
         sticky="w"
     )
+
+    conversao_resultado = ctk.CTkLabel(
+        janela,
+        text=f"converter: "
+    )
+
+    conversao_resultado.grid(
+        row=10,
+        column=0,
+        padx=20,
+        pady=(0,10),
+        sticky="w"
+    )
+
+
     janela.mainloop()
 
