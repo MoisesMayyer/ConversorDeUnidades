@@ -25,9 +25,9 @@ def criar_janela():
         resultado = converter(valor, categoria, unidadei,unidadef)
         erro = isinstance(resultado, str)
         if erro:
-            conversao_resultado.configure(text=f"converter: {resultado:}")
+            conversao_resultado.configure(text=f"Resultado: {resultado:}")
         else:
-            conversao_resultado.configure(text=f"converter: {resultado:.3f}")
+            conversao_resultado.configure(text=f"Resultado: {resultado:.3f}")
 
 
     ctk.set_appearance_mode("dark")
@@ -72,7 +72,8 @@ def criar_janela():
         janela,
         values= list(unidades_lista.keys()),
         font=("arial", 15),
-        command=atualizar_unidades
+        command=atualizar_unidades,
+        state="readonly"
 
     )
 
@@ -128,7 +129,8 @@ def criar_janela():
     unidade_inicial = ctk.CTkComboBox(
         janela,
         values=[],
-        font=("arial", 15)
+        font=("arial", 15),
+        state="readonly"
     )
 
     unidade_inicial.grid(
@@ -156,7 +158,8 @@ def criar_janela():
     unidade_destino = ctk.CTkComboBox(
         janela,
         values=[],
-        font=("arial",15)
+        font=("arial",15),
+        state="readonly"
     )
 
     unidade_destino.grid(
@@ -187,7 +190,7 @@ def criar_janela():
 
     conversao_resultado = ctk.CTkLabel(
         janela,
-        text=f"converter: "
+        text=f"Resultado: "
     )
 
     conversao_resultado.grid(

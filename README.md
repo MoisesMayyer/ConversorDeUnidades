@@ -24,7 +24,7 @@ O sistema permite que o usuário informe um valor, selecione uma unidade de orig
 
 ## 🧭 Versão Atual
 
-**v0.2**
+**v0.3**
 
 ---
 
@@ -93,6 +93,11 @@ Durante o desenvolvimento deste projeto foram praticados os seguintes conceitos:
 ---
 
 ## 📚 Histórico de Versões
+
+### v0.3
+- Implementação conversão de massa
+- Implementação conversão de temperatura
+- Edição manual dos ComboBox
 
 ### v0.2
 - Implementação da conversão de comprimento  

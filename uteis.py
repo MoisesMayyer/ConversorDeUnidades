@@ -21,7 +21,6 @@ def lista_de_unidades():
     }
 
 
-
 def fatores_comprimento():
     fatores = {
         "Centímetro": 0.01,
@@ -29,3 +28,11 @@ def fatores_comprimento():
         "Quilômetro": 1000
     }
     return fatores
+
+
+def fatores_massa():
+    return {
+        "Grama": 0.001,
+        "Quilograma": 1,
+        "Tonelada": 1000
+    }
