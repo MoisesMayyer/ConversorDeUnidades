@@ -29,16 +29,10 @@ O sistema permite que o usuário informe um valor, selecione uma unidade de orig
 ---
 
 ## ✅ Implementado nesta versão
-
-- Interface gráfica construída com CustomTkinter  
-- Seleção de categorias de conversão  
-- Atualização automática das unidades disponíveis  
-- Campo para inserção de valores  
-- Seleção da unidade de origem e destino  
-- Conversão funcional de comprimento  
-- Exibição do resultado na interface  
-- Tratamento básico de entradas inválidas  
-- Estrutura modular do projeto  
+- Implementação conversão de massa
+- Implementação conversão de temperatura
+- Edição manual dos ComboBox
+ 
 
 ---
 
