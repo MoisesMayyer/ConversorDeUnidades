@@ -1,5 +1,5 @@
 import customtkinter as ctk
-from uteis import lista_de_unidades
+from uteis import lista_de_unidades, CONFIG_GRID
 from conversor import converter
 
 
@@ -61,9 +61,7 @@ def criar_janela():
     categoria_label.grid(
         row=1,
         column=0,
-        padx=20,
-        pady=(10, 5),
-        sticky="w"
+        **CONFIG_GRID
     )
 
     unidades_lista = lista_de_unidades()
@@ -80,9 +78,7 @@ def criar_janela():
     categorias.grid(
         row=2,
         column=0,
-        padx=20,
-        pady=(0, 15),
-        sticky="w"
+        **CONFIG_GRID
     )
 
     # valor_label a ser colocado
@@ -94,9 +90,7 @@ def criar_janela():
     valor_label.grid(
         row=3,
         column=0,
-        padx=20,
-        pady=(0,15),
-        sticky="w"
+        **CONFIG_GRID
     )
 
     inserir_valor = ctk.CTkEntry(
@@ -108,9 +102,7 @@ def criar_janela():
     inserir_valor.grid(
         row=4,
         column=0,
-        padx=20,
-        pady=(0,15),
-        sticky="w"
+        **CONFIG_GRID
     )
 
     #escolha de conversão
@@ -122,9 +114,7 @@ def criar_janela():
     unidade_label.grid(
         row=5,
         column=0,
-        padx=20,
-        pady=(0, 15),
-        sticky="w"
+        **CONFIG_GRID
     )
     unidade_inicial = ctk.CTkComboBox(
         janela,
@@ -136,9 +126,7 @@ def criar_janela():
     unidade_inicial.grid(
         row=6,
         column=0,
-        padx=20,
-        pady=(0,15),
-        sticky="w"
+        **CONFIG_GRID
     )
 
     #unidade final
@@ -150,9 +138,7 @@ def criar_janela():
     unidade_final.grid(
         row=7,
         column=0,
-        padx=20,
-        pady=(0,15),
-        sticky="w"
+        **CONFIG_GRID
     )
 
     unidade_destino = ctk.CTkComboBox(
@@ -165,9 +151,7 @@ def criar_janela():
     unidade_destino.grid(
         row=8,
         column=0,
-        padx=20,
-        pady=(0,15),
-        sticky="w"
+        **CONFIG_GRID
     )
 
     categorias.set("Comprimento")
@@ -183,9 +167,7 @@ def criar_janela():
     botao_converter.grid(
         row=9,
         column=0,
-        padx=20,
-        pady=(10, 15),
-        sticky="w"
+        **CONFIG_GRID
     )
 
     conversao_resultado = ctk.CTkLabel(
@@ -196,11 +178,7 @@ def criar_janela():
     conversao_resultado.grid(
         row=10,
         column=0,
-        padx=20,
-        pady=(0,10),
-        sticky="w"
+        **CONFIG_GRID
     )
-
-
     janela.mainloop()
 

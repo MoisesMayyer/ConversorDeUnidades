@@ -36,3 +36,9 @@ def fatores_massa():
         "Quilograma": 1,
         "Tonelada": 1000
     }
+
+CONFIG_GRID = {
+    "pady": (0, 15),
+    "padx": 20,
+    "sticky": "w"
+}
