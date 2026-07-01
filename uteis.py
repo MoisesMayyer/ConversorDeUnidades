@@ -1,4 +1,3 @@
-
 def lista_de_unidades():
     return {
         "Comprimento": [
@@ -6,13 +5,11 @@ def lista_de_unidades():
             "Metro",
             "Quilômetro"
         ],
-
         "Massa": [
             "Grama",
             "Quilograma",
             "Tonelada"
         ],
-
         "Temperatura": [
             "Celsius",
             "Fahrenheit",
@@ -22,12 +19,11 @@ def lista_de_unidades():
 
 
 def fatores_comprimento():
-    fatores = {
+    return {
         "Centímetro": 0.01,
         "Metro": 1,
         "Quilômetro": 1000
     }
-    return fatores
 
 
 def fatores_massa():
@@ -36,9 +32,3 @@ def fatores_massa():
         "Quilograma": 1,
         "Tonelada": 1000
     }
-
-CONFIG_GRID = {
-    "pady": (0, 15),
-    "padx": 20,
-    "sticky": "w"
-}
