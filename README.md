@@ -15,20 +15,6 @@ Aplicativo desktop em Python para converter unidades de comprimento, massa e tem
 - Python 3
 - CustomTkinter
 
-## Como executar
-
-Instale as dependências:
-
-```bash
-pip install -r requirements.txt
-```
-
-Execute o projeto:
-
-```bash
-python .
-```
-
 ## Estrutura
 
 - `interface.py`: interface gráfica do aplicativo
